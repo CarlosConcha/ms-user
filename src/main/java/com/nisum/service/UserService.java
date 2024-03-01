@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -18,13 +20,15 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class UserService implements UserAdapter {
 
+	private static final Logger logger = LoggerFactory.getLogger(UserService.class);
+	
 	private final UserRepository userRepository;
 	private final PasswordEncoder passwordEncoder;
 	private final TokenAdapter tokenAdapter;
 	
 	@Override
 	public User create(UserDTO dto) {
-		
+		logger.info("request -> "+dto.toString());
 		//uuid for key and token purpose
 		String generateUuid = UUID.randomUUID().toString();
 		
