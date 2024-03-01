@@ -35,9 +35,4 @@ public class ControllerAdvisor {
 		return new ResponseEntity<>(notif, HttpStatus.FORBIDDEN);
 	}
 	
-	@ExceptionHandler(Exception.class)
-	public ResponseEntity<Notification> genericExceptionHandler(Exception exception){
-		Notification notif = NotificationFactory.buildNotification("Ha ocurrido un error inesperado.");
-		return new ResponseEntity<>(notif, HttpStatus.NOT_IMPLEMENTED);
-	}
 }
