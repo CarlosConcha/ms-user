@@ -11,6 +11,7 @@ import com.nisum.constant.RegexConstant;
 import com.nisum.validator.annotation.Password;
 
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -35,6 +36,7 @@ public class UserDTO {
 	private String token;
 	@JsonProperty("isactive")
 	private Boolean isActive;
+	@NotEmpty
 	private List<PhoneDTO> phones;
 	
 	public UserDTO(String id,LocalDateTime created, LocalDateTime modified, LocalDateTime lastLogin, String token, Boolean isActive) {
