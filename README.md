@@ -10,6 +10,9 @@
 | Java | 17 |
 | Spring Boot | 3.2.3 |
 
+#### Script Sql
+[abrir script](./src/main/resources/schema.sql)
+
 ### Ejecuta test
 En la carpeta del proyecto abrir la consola y ejecutar el comando.
 
