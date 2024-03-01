@@ -50,7 +50,7 @@ gradlew bootRun
 
 ##### request url
 
-http://localhost:8080/api/v1/user
+POST http://localhost:8080/api/v1/user
 
 ##### cURL
 
