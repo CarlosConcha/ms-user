@@ -11,6 +11,7 @@
 | Spring Boot | 3.2.3 |
 
 #### Script Sql
+Se ejecuta automaticamente al levantar el proyecto
 [abrir script](./src/main/resources/schema.sql)
 
 ### Ejecuta test
