@@ -45,41 +45,23 @@ http://localhost:8080/api/v1/user
 ```sh
 
 curl --location 'localhost:8080/api/v1/user' \
-
 --header 'Content-Type: application/json' \
-
 --data-raw '{
-
-"name": "carlos jesus",
-
-"email": "carlos@gmail.com",
-
-"password": "bazoad44",
-
-"phones": [
-
-{
-
-"number": "56810411",
-
-"city_code": "9",
-
-"country_code": "56"
-
-},
-
-{
-
-"number": "96845431",
-
-"city_code": "9",
-
-"country_code": "56"
-
-}
-
-]
-
+    "name": "carlos jesyus",
+    "email": "carldar@r.cl",
+    "password": "bazoad44",
+    "phones": [
+        {
+            "number": "12345678",
+            "city_code": "52",
+            "country_code": "1"
+        },
+        {
+            "number": "12345689",
+            "city_code": "52",
+            "country_code": "1"
+        }
+    ]
 }'
 
 ```
