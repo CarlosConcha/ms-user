@@ -10,7 +10,19 @@
 | Java | 17 |
 | Spring Boot | 3.2.3 |
 
-### Ejecutar
+### Ejecuta test
+En la carpeta del proyecto abrir la consola y ejecutar el comando.
+
+**gitbash**
+```sh
+./gradlew clean test
+```
+**CMD**
+```sh
+gradlew clean test
+```
+
+### Como probar
 
 Para  poder  ejecutar el proyecto  se  debe  ir a la  carpeta ms-user, Abrir  la  consola y ejecutar el comando.
 
