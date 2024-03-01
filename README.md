@@ -78,7 +78,7 @@ curl --location 'localhost:8080/api/v1/user' \
 
 ```
 
-##### response
+##### response - 201
 
 ```json
 {
