@@ -38,6 +38,14 @@ Para  poder  ejecutar el proyecto  se  debe  ir a la  carpeta ms-user, Abrir  la
 ```sh
 gradlew bootRun
 ```
+### Consola h2
+
+http://localhost:8080/h2-console
+```sh
+JDBC URL: jdbc:h2:mem:testdb
+usuario: sa
+contraseña: password
+```
 
 ### Swagger3
 
